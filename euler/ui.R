@@ -14,7 +14,6 @@ library(ggthemes)
 library(tseries)
 library(lubridate)
 library(timetk)
-library(readxl)
 library(scales)
 library(forecast)  
 library(rlang) #  forecasting pkg
