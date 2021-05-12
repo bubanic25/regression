@@ -24,7 +24,7 @@ RUN apt-get update && apt-get install -y \
 RUN R -e "install.packages(c('shiny', 'rmarkdown'))"
 
 # install dependencies of the euler app
-RUN R -e "install.packages(c('Rmpfr','lubridate','PerformanceAnalytics','quantmod','tidyquant','forecast','ggthemes','teries','lubridate','timetk','scales','rlang','sweep','broom','tibble','stringr','highcharter','knitr','quantmod','shinythemes','ggforce'))"
+RUN R -e "install.packages(c('Rmpfr','lubridate','PerformanceAnalytics','quantmod','tidyquant','readxl', 'forecast','ggthemes','teries','lubridate','timetk','scales','rlang','sweep','broom','tibble','stringr','highcharter','knitr','quantmod','shinythemes','ggforce'))"
 
 # copy the app to the image
 RUN mkdir /root/euler
