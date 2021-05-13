@@ -34,7 +34,7 @@ initialTicker <- "DOJ"
 ui <- fluidPage(theme = shinytheme("slate"),
                 
                 # Application title
-                titlePanel("neuralstocks.com"),
+               
                 
                 
                 
@@ -56,9 +56,11 @@ ui <- fluidPage(theme = shinytheme("slate"),
                     sliderInput("sliderSims", "Number of Simulations", 100, 10000, 1000),
                     
                     helpText("Note: At Default Setting this forecasting simulation takes about 2 minutes to execute per Quote.",
-                             "Increasing the Range of Data to analize, the amount of Days to Forecast, ",
-                             "the number of Series, and Simulations greatly increses execution.",
-                             "Doing so however will increase learning and predicting accurcies"),
+                             "",
+  `                         "Increasing the amount of Days to Forecast greatly increases execution times while decreasing predictable probabilities.",
+                             "",
+                             "Increasing the number of simulations preformed greatly increases execution times while increases predictable probabilities"
+                             ),
                     
                     actionButton("run", "Run")
                   ),
