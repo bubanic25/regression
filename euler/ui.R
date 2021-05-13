@@ -57,7 +57,7 @@ ui <- fluidPage(theme = shinytheme("slate"),
                     
                     helpText("Note: At Default Setting this forecasting simulation takes about 2 minutes to execute per Quote.",
                              "",
-  `                         "Increasing the amount of Days to Forecast greatly increases execution times while decreasing predictable probabilities.",
+                          "Increasing the amount of Days to Forecast greatly increases execution times while decreasing predictable probabilities.",
                              "",
                              "Increasing the number of simulations preformed greatly increases execution times while increases predictable probabilities"
                              ),
