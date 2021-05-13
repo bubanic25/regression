@@ -13,7 +13,6 @@ library(sweep)   # Broom tidiers for forecast pkg
 library(broom)
 library(tibble)
 library(stringr)
-library(highcharter)
 library(knitr)
 library(quantmod)
 library(shinythemes)
